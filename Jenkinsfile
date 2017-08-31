@@ -12,7 +12,7 @@ node {
     }
 
     stage('Checkout') {
-        git 'https://github.com/eparksLibMu/RomanNumberalConverter'
+        git 'https://github.com/eparksLibMu/RomanNumeralConverter'
     }
 
     stage('Version') {
