@@ -21,10 +21,10 @@ node {
     }
 
     stage('Build') {
-        sh 'mvn -B -V -U -e clean package'
+        sh 'javac src/com/company/Main.java'
     }
 
-    stage('Archive') {
+    stage('Test') {
         junit allowEmptyResults: true, testResults: '**/target/**/TEST*.xml'
     }
 
